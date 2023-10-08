@@ -178,10 +178,26 @@ we can images folder and its files
        css    folder and its files
        js     folder and its files
 
-inorder static files we n
+inorder to process or detect static file we need to statc files path in settings.py main project folder
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
 
 
 
+for adding css in base html file here use inheritance property to load static folder to 
+load css files the same inheritance property
 
+to load static folder - {% load static %}
 
+to load style sheoet - {% static '/css/style.css' %}
+
+after that we can see the changes 
+
+Models in django -- A Django model is a class that represents table in our Database.
+
+Django create a database  when we create the project.
+
+Models are defined in the app/models.py
 
