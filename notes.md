@@ -201,3 +201,10 @@ Django create a database  when we create the project.
 
 Models are defined in the app/models.py
 
+in models 
+
+charfield supports 255 characters
+
+text field support more than 255 characters
+
+to change in models we need to migrate and re run server
