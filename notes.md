@@ -208,3 +208,16 @@ charfield supports 255 characters
 text field support more than 255 characters
 
 to change in models we need to migrate and re run server
+
+please note that in case of character feild we need to mention the maxlenth 
+
+in case of text field no need to mention max length it also support more thann 255 characters
+
+                                |
+python manage.py makemigrations |
+                                |
+                                | we need to use all these to change take place migration in models
+python manage.py migrate        |
+                                |
+
+if we need to load database in django admin panel we need to import models in admins.py folder of home
