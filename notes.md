@@ -221,3 +221,14 @@ python manage.py migrate        |
                                 |
 
 if we need to load database in django admin panel we need to import models in admins.py folder of home
+
+we need to call the database object also
+
+then we just relload the admin panel 
+
+the we can see the changes then we need to move to departmemt
+
+then we can move to department page and make some changes
+
+import models .in views.py folder also
+
