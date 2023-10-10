@@ -300,7 +300,7 @@ a sample string function used in models.py is shown above
 
 after all these we need to views.py the we need  to chnages 
 
-the create a 
+the create a dictionary then we can call doctors model in that dictionary and we can pass it as argument
 
 
 

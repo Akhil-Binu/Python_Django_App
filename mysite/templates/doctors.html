@@ -5,6 +5,12 @@
 
 {%block content%} <h1> Doctors Page content <h1> {%endblock%}
 
+{% for d in doctors%}
+
+<h1>{{d.doc_name}}</h1>
+
+{%endfor%}
+
 
 {% comment %} <!DOCTYPE html>
 <html lang="en">
