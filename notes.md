@@ -248,4 +248,7 @@ we need to install pillow to use images in python django
 for usage of folder in python django 
 
 we need to add media root and media url demo code is shown below this is need to be placed on 
-settings.py in main project folder refer end of settings.py 1
+settings.py in main project folder refer end of settings.py 
+
+MEDIA_ROOT = BASE_DIR / 'uploads'
+MEDIA_URL = '/media/'
