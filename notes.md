@@ -314,5 +314,28 @@ next we can  move to booking page so for this we need to create model called boo
             charfield supports 255 charcters
             textfeild supports more than 255 character
             emailfeild support email type of data only
-            imagefield support image type data only
-            
+            imagefield support image type data only and also we need to assign a folder to it
+            datefield supports date only
+            foriegnkey need two argument firts which folder is linked second deleting command
+            while deleting from parent table
+
+we can use conctenation to pass two values using concatenation function to pass two arguments 
+
+after creating model for booking we need to use forms.py to create a booking form
+
+for that we need to import from from django
+
+from django import forms
+
+also we need to import booking models
+
+then we need to create class and assign to pass booking model also we need to include field attribute else will result in 
+error
+
+then we need to call this booking 
+
+
+
+
+
+
