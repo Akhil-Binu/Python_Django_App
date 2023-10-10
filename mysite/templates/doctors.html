@@ -5,17 +5,17 @@
 
 {%block content%} <h1 class = "text-center"> Doctors Page<h1> 
 
-<div class="container"> 
+<div class="container text-center"> 
 
 {% for d in doctor %}
 
 <h1></h1>
-<div class="card text-center" style="width: 18rem;">
+<div class="card text-center" style="width: 18rem; display:inline-block">
   <img class="card-img-top" src="{{d.doc_image.url}}" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title"> Dr. {{d.doc_name}}</h5>
     <p class="card-text">{{d.doc_spec}}</p>
-    <h6>{{d.dep_name}}</h6>
+    <h6>Department : {{d.dep_name}}</h6>
   </div>
 </div>
 
@@ -24,6 +24,7 @@
 <br>
 <br>
 <br>
+
 {%endblock%}
 
 {% comment %} <!DOCTYPE html>
