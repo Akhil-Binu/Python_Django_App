@@ -26,6 +26,12 @@ def booking(request):
     return render(request, 'booking.html')
 
 def doctors(request):
+
+    dict_docs : {
+               
+    }
+
+
     return render(request, 'doctors.html')
 
 def contact(request):

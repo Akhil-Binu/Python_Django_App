@@ -252,3 +252,55 @@ settings.py in main project folder refer end of settings.py
 
 MEDIA_ROOT = BASE_DIR / 'uploads'
 MEDIA_URL = '/media/'
+
+then we need to static settinngs in urls.py in main project folder
+
++ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
+for usage of this we need to import
+
+<!-- 
+
+from django.conf.urls.static import static
+from xml.dom.minidom import Document
+from django.contrib import admin
+from django.conf import settings
+
+ -->
+
+ then we need to import all this settings 
+
+ then we need to migrate the second model doctors which we create for this
+
+ python manage.py makemigrations
+ python manage.py migrate
+
+ then go to admin.py file in app folder then here it is home so visit admin.py in home folder and register the Doctor model 
+ we created 
+
+ after rerun the server we can see that
+
+while visiting the admin panel we can see it not as department name insted we can see it as object name
+
+to fix this issue we need to create a string function in models.py
+
+<!--
+
+
+ def __str__(self):
+        return self.dep_name 
+        
+        
+        -->
+
+
+
+
+a sample string function used in models.py is shown above 
+
+after all these we need to views.py the we need  to chnages 
+
+the create a 
+
+
+
