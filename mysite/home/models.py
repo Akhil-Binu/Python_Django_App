@@ -24,6 +24,6 @@ class Booking(models.Model):
     p_phone = models.CharField(max_length=200)
     p_email = models.EmailField()
     doc_name = models.ForeignKey(Doctors, on_delete=models.CASCADE)
-    bookinng_date = models.DateField()
+    booking_date = models.DateField()
     booked_on = models.DateField(auto_now=True)
    

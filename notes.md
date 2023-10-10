@@ -334,6 +334,10 @@ error
 
 then we need to call this booking 
 
+for adding date refer to forms.py
+
+
+
 
 
 
