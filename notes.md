@@ -207,6 +207,8 @@ charfield supports 255 characters
 
 text field support more than 255 characters
 
+
+
 to change in models we need to migrate and re run server
 
 please note that in case of character feild we need to mention the maxlenth 
@@ -232,3 +234,18 @@ then we can move to department page and make some changes
 
 import models .in views.py folder also
 
+we can use foreign also in models in django syntax is below
+
+   dep_name = models.ForeignKey(Departments, on_delete=models.CASCADE) // here it refered to table departments 
+   // on_delete=models.CASCADE refers to deletion dep_name deleted in refered table then her also it will be deleted 
+
+for usage of image in django default database we can use  ImageField  demo code is shown below
+
+doc_image = models.ImageField(upload_to='doctors')
+
+we need to install pillow to use images in python django
+
+for usage of folder in python django 
+
+we need to add media root and media url demo code is shown below this is need to be placed on 
+settings.py in main project folder refer end of settings.py 1

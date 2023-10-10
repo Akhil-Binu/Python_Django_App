@@ -6,12 +6,19 @@
 
 <h1 class="text-center"> Our Department <h1> 
 <hr>
+<br>
 {% for d in dept%}
-<div class = "mx-auto w-50 bg-success text-center text-white p-3 my-9 border border-warning rounded">
+<div class="mx-auto w-50 bg-success text-center text-white p-3 m-6 border border-warning rounded">
   <h1>{{d.dep_name}}</h1>
   <h6>{{d.dep_description}}</h6>
 </div>
+<br>
+
+
+
 {%endfor%}
+<br>
+<br>
 {%endblock%}
 
 
