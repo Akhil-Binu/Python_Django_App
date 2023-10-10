@@ -16,7 +16,7 @@ class Doctors(models.Model):
     dep_name = models.ForeignKey(Departments, on_delete=models.CASCADE)
     doc_image = models.ImageField(upload_to='doctors')
 
-    def __str__(self):
-        return self.doc_name, self.dep_name
+    # def __str__(self):
+    #     return self.doc_name, self.dep_name
 
    

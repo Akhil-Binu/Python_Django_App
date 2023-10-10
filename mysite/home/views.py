@@ -3,6 +3,7 @@ from django.shortcuts import render
 from .models import Departments
 from .models import Doctors
 
+
 # Create your views here.
 
 person = {
@@ -28,13 +29,12 @@ def booking(request):
 
 def doctors(request):
 
-    dict_docs = {
+    dict_doc = {
 
-              'doctors' : Doctors.objects.all() 
+              'doctor' : Doctors.objects.all() 
     }
 
-
-    return render(request, 'doctors.html',dict_docs)
+    return render(request, 'doctors.html', dict_doc)
 
 def contact(request):
     return render(request, 'contact.html')
