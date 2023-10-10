@@ -3,17 +3,17 @@
 
 {%block title%} Doctors {%endblock%}
 
-{%block content%} <h1> Doctors Page<h1> 
+{%block content%} <h1 class = "text-center"> Doctors Page<h1> 
 
 <div class="container"> 
 
 {% for d in doctor %}
 
 <h1></h1>
-<div class="card" style="width: 18rem;">
-  <img class="{{d.doc_image.url}}" src="..." alt="Card image cap">
+<div class="card text-center" style="width: 18rem;">
+  <img class="card-img-top" src="{{d.doc_image.url}}" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">{{d.doc_name}}</h5>
+    <h5 class="card-title"> Dr. {{d.doc_name}}</h5>
     <p class="card-text">{{d.doc_spec}}</p>
     <h6>{{d.dep_name}}</h6>
   </div>
@@ -21,6 +21,9 @@
 
 {%endfor%}
 </div>
+<br>
+<br>
+<br>
 {%endblock%}
 
 {% comment %} <!DOCTYPE html>
