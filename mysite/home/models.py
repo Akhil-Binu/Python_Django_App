@@ -19,4 +19,11 @@ class Doctors(models.Model):
     # def __str__(self):
     #     return self.doc_name, self.dep_name
 
+class Booking(models.Model):
+    p_name = models.CharField(max_length=200)
+    p_phone = models.CharField(max_length=200)
+    p_email = models.EmailField()
+    doc_name = models.ForeignKey(Doctors, on_delete=models.CASCADE)
+    bookinng_date = models.DateField()
+    booked_on = 
    

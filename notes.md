@@ -207,6 +207,7 @@ charfield supports 255 characters
 
 text field support more than 255 characters
 
+foreign key need 2 arguments 
 
 
 to change in models we need to migrate and re run server
@@ -302,5 +303,16 @@ after all these we need to views.py the we need  to chnages
 
 the create a dictionary then we can call doctors model in that dictionary and we can pass it as argument
 
+there we can make changes in doctors html document using inheritance property
 
+next we can  move to booking page so for this we need to create model called booking for this
 
+           ------------------------------------------------------------------------------------
+
+            For best of my knowledge we can use diffrent type of field in character database
+
+            charfield supports 255 charcters
+            textfeild supports more than 255 character
+            emailfeild support email type of data only
+            imagefield support image type data only
+            
