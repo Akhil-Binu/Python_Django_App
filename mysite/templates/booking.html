@@ -2,12 +2,15 @@
 
 {%block title%} Booking Page {%endblock%}
 
-{%block content%} <h1 class="text-center"> Booking Page content <h1> 
-  
-<form action = "">
+{%block content%} <h1 class="text-center"> Make an Appointment <h1> 
+ {% comment %} <br> {% endcomment %}
+ <br>
+ <h6> 
+ <div class = "container w-50 text-center"> </div>
+<form action = "" class = "text-center">
         {{form.as_p}}
 </form>
-  
+</h6>
 {%endblock%}
 
 
