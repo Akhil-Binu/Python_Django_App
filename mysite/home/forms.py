@@ -19,3 +19,10 @@ class BookingForm(forms.ModelForm):
             'booking_date' : DateInput(),
 
         }
+
+        labels = {
+            'p_name' : "Patients Name",
+            'p_phone' : "Patients Phone Number",
+            'p_email' : "Patients Email",
+            'doc_name' : "Doctors Name"
+        }

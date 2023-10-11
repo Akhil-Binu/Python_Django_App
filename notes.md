@@ -336,6 +336,18 @@ then we need to call this booking
 
 for adding date refer to forms.py
 
+for designing forms use cripy forms and cripy forms and its bootstrap version 
+
+then add it in installed apps
+
+at lst add it pack name as shown below at the end of settings.py
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+after this some styling properties were done 
+
+
 
 
 
